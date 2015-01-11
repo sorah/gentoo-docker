@@ -1,5 +1,10 @@
 # sorah's gentoo dockerfiles
 
+### Family
+
+- sorah/gentoo-docker-stage3:YYYYMMDD - only stage3 (`docker import`, `./stage3.sh`)
+- sorah/gentoo-docker/base - portage synced
+
 ## License
 
 The MIT License (MIT)
