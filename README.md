@@ -4,11 +4,11 @@
 
 #### stage3
 
-- sorah/gentoo-docker-stage3:YYYYMMDD - only stage3 (`docker import`, `./stage3.sh`)
+- quay.io/sorah/gentoo-stage3:YYYYMMDD - only stage3 (`docker import`, `./stage3.sh`)
 
 #### base
 
-- sorah/gentoo-docker/base - portage synced
+- quay.io/sorah/gentoo-docker:base - portage synced
 
 #### flavored
 
