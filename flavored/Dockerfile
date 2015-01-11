@@ -33,8 +33,6 @@ RUN CONFIG_PROTECT_MASK="/etc" emerge -v dev-vcs/mercurial
 RUN CONFIG_PROTECT_MASK="/etc" emerge -v sys-process/htop
 RUN CONFIG_PROTECT_MASK="/etc" emerge -v sys-apps/dstat
 
-RUN CONFIG_PROTECT_MASK="/etc" emerge -v app-text/tree
-
 RUN CONFIG_PROTECT_MASK="/etc" emerge -v app-editors/vim
 RUN CONFIG_PROTECT_MASK="/etc" emerge -v app-misc/jq
 

@@ -19,7 +19,6 @@ The following packages have set up:
 - app-admin/sudo
 - app-editors/vim
 - sys-apps/less
-- app-text/tree
 - net-analyzer/netcat
 - sys-apps/iproute2
 - sys-process/htop
