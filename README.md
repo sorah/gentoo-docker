@@ -2,8 +2,42 @@
 
 ### Family
 
+#### stage3
+
 - sorah/gentoo-docker-stage3:YYYYMMDD - only stage3 (`docker import`, `./stage3.sh`)
+
+#### base
+
 - sorah/gentoo-docker/base - portage synced
+
+#### flavored
+
+The following packages have set up:
+
+- app-portage/flaggie
+- app-portage/layman
+- app-admin/sudo
+- app-editors/vim
+- sys-apps/less
+- app-text/tree
+- net-analyzer/netcat
+- sys-apps/iproute2
+- sys-process/htop
+- sys-apps/dstat
+- app-arch/unzip
+- app-misc/jq
+- net-dns/bind-tools
+- net-misc/curl
+- dev-vcs/git
+- dev-vcs/subversion
+- dev-vcs/mercurial
+- dev-libs/libyaml
+- sys-libs/readline
+- dev-libs/libffi
+- dev-libs/libxml2
+- dev-libs/libxslt
+- dev-libs/openssl
+- sys-libs/zlib
 
 ## License
 
