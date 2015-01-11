@@ -1,4 +1,4 @@
-FROM sorah/gentoo-docker:base
+FROM quay.io/sorah/gentoo-docker:base
 MAINTAINER her@sorah.jp
 
 RUN CONFIG_PROTECT_MASK="/etc" emerge -v app-portage/flaggie
