@@ -7,6 +7,8 @@ RUN flaggie +ssl
 RUN CONFIG_PROTECT_MASK="/etc" emerge -v app-portage/layman
 RUN echo 'source /var/lib/layman/make.conf' >> /etc/portage/make.conf
 
+RUN CONFIG_PROTECT_MASK="/etc" emerge -v app-admin/syslog-ng
+
 RUN CONFIG_PROTECT_MASK="/etc" emerge -v app-admin/sudo
 
 RUN CONFIG_PROTECT_MASK="/etc" emerge -v sys-libs/readline

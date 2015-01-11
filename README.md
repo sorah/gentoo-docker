@@ -16,6 +16,7 @@ The following packages have set up:
 
 - app-portage/flaggie
 - app-portage/layman
+- app-admin/syslog-ng
 - app-admin/sudo
 - app-editors/vim
 - sys-apps/less
