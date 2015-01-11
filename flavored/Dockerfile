@@ -2,6 +2,8 @@ FROM sorah/gentoo-docker:base
 MAINTAINER her@sorah.jp
 
 RUN CONFIG_PROTECT_MASK="/etc" emerge -v app-portage/flaggie
+RUN flaggie +ssl
+
 RUN CONFIG_PROTECT_MASK="/etc" emerge -v app-portage/layman
 RUN echo 'source /var/lib/layman/make.conf' >> /etc/portage/make.conf
 
