@@ -12,32 +12,37 @@
 
 #### flavored
 
+- quay.io/sorah/gentoo-flavored
+
+This Dockerfile couldn't be built on quay.io, so I've built on my machines.
+
 The following packages have set up:
 
 - app-portage/flaggie
 - app-portage/layman
 - app-admin/syslog-ng
 - app-admin/sudo
-- app-editors/vim
-- sys-apps/less
-- net-analyzer/netcat
+- sys-libs/readline
+- sys-libs/zlib
+- dev-libs/openssl
+- dev-libs/libffi
+- dev-libs/libyaml
+- dev-libs/libxml2
+- dev-libs/libxslt
 - sys-apps/iproute2
-- sys-process/htop
-- sys-apps/dstat
-- app-arch/unzip
-- app-misc/jq
-- net-dns/bind-tools
+- net-analyzer/netcat
+- sys-apps/less
 - net-misc/curl
+- net-dns/bind-tools
+- app-arch/unzip
 - dev-vcs/git
 - dev-vcs/subversion
 - dev-vcs/mercurial
-- dev-libs/libyaml
-- sys-libs/readline
-- dev-libs/libffi
-- dev-libs/libxml2
-- dev-libs/libxslt
-- dev-libs/openssl
-- sys-libs/zlib
+- sys-process/htop
+- sys-apps/dstat
+- app-editors/vim
+- app-misc/jq
+
 
 ## License
 
