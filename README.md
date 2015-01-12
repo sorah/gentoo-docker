@@ -5,14 +5,17 @@
 #### stage3
 
 - quay.io/sorah/gentoo-stage3:YYYYMMDD - only stage3 (`docker import`, `./stage3.sh`)
+- [![Docker Repository on Quay.io](https://quay.io/repository/sorah/gentoo-stage3/status "Docker Repository on Quay.io")](https://quay.io/repository/sorah/gentoo-stage3)
 
 #### base
 
 - quay.io/sorah/gentoo-docker:base - portage synced
+- [![Docker Repository on Quay.io](https://quay.io/repository/sorah/gentoo-docker/status "Docker Repository on Quay.io")](https://quay.io/repository/sorah/gentoo-docker)
 
 #### flavored
 
 - quay.io/sorah/gentoo-flavored
+- [![Docker Repository on Quay.io](https://quay.io/repository/sorah/gentoo-flavored/status "Docker Repository on Quay.io")](https://quay.io/repository/sorah/gentoo-flavored)
 
 This Dockerfile couldn't be built on quay.io, so I've built on my machines.
 
