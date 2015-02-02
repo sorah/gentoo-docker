@@ -37,12 +37,9 @@ The following packages have set up:
 - sys-apps/less
 - net-misc/curl
 - net-dns/bind-tools
-- app-arch/unzip
 - dev-vcs/git
 - dev-vcs/subversion
 - dev-vcs/mercurial
-- sys-process/htop
-- sys-apps/dstat
 - app-editors/vim
 - app-misc/jq
 
