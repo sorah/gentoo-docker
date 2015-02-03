@@ -26,4 +26,4 @@ RUN CONFIG_PROTECT_MASK="/etc" emerge -v \
   app-editors/vim \
   app-misc/jq
 
-RUN rm -rf /var/tmp/portage/* && eclean-dist
+RUN rm -rf /var/tmp/portage/* && eclean-dist --destructive
