@@ -4,7 +4,7 @@
 set -x
 set -e
 
-MIRROR_PREFIX="${MIRROR_PREFIX:-ftp://ftp.iij.ad.jp/pub/linux/gentoo/releases/amd64/current-iso}"
+MIRROR_PREFIX="${MIRROR_PREFIX:-ftp://ftp.iij.ad.jp/pub/linux/gentoo/releases/amd64/autobuilds/current-stage3-amd64}"
 WORKDIR="/tmp/gentoo-docker-work-$(date +%s)"
 REPO="${1:-quay.io/sorah/gentoo-stage3}"
 
