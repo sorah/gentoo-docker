@@ -10,7 +10,7 @@ REPO="${1:-quay.io/sorah/gentoo-stage3}"
 
 mkdir $WORKDIR && cd $WORKDIR
 
-wget 'ftp://ftp.iij.ad.jp/pub/linux/gentoo/releases/amd64/current-iso/stage3-amd64-20*.tar.bz2'
+wget "${MIRROR_PREFIX}"'/stage3-amd64-20*.tar.bz2'
 
 FILE="$(ls -1 stage3-*)"
 VERSION="$(ls -1 stage3-* | cut -d- -f 3 | cut -d. -f 1)"
