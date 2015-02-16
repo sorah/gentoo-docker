@@ -1,0 +1,11 @@
+#!/bin/bash -x
+set -e
+SNAPSHOT_URL="http://ftp.iij.ad.jp/pub/linux/gentoo/snapshots/portage-latest.tar.xz"
+wget -O /tmp/portage-latest.tar.xz "${SNAPSHOT_URL}"
+tar xf /tmp/portage-latest.tar.xz -C /usr
+rm /tmp/portage-latest.tar.xz
+set +e
+emerge "$@"
+retval=$?
+rm -rf /usr/portage
+exit $retval
