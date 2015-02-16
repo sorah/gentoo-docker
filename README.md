@@ -9,8 +9,10 @@
 
 #### base
 
-- quay.io/sorah/gentoo-docker:base - portage synced
-- [![Docker Repository on Quay.io](https://quay.io/repository/sorah/gentoo-docker/status "Docker Repository on Quay.io")](https://quay.io/repository/sorah/gentoo-docker)
+- quay.io/sorah/gentoo-base-unsquashed:base - removed unused system stuffs, adding `dockemerge` command, drop python 3.x and keep python 2.7
+- quay.io/sorah/gentoo-base - squashed image of quay.io/sorah/gentoo-base-unsquashed
+- [![Docker Repository on Quay.io](https://quay.io/repository/sorah/gentoo-docker/status "Docker Repository on Quay.io")](https://quay.io/repository/sorah/gentoo-base)
+
 
 #### flavored
 
