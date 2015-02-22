@@ -14,7 +14,9 @@ TMPCONTAINER="$(docker run -d ${RAWREPO}:${VERSION} sleep 12h)"
 docker export ${TMPCONTAINER} | docker import - ${REPO}:${VERSION}
 
 docker stop -t 1 ${TMPCONTAINER}
-docker rm ${TMPCONTAINER}
+if [ ! -n "$CIRCLECI" ]; then
+  docker rm ${TMPCONTAINER}
+fi
 
 docker tag -f ${RAWREPO}:${VERSION} ${RAWREPO}:latest
 docker tag -f ${REPO}:${VERSION} ${REPO}:latest
