@@ -27,13 +27,6 @@ The following packages have set up:
 - app-portage/layman
 - app-admin/syslog-ng
 - app-admin/sudo
-- sys-libs/readline
-- sys-libs/zlib
-- dev-libs/openssl
-- dev-libs/libffi
-- dev-libs/libyaml
-- dev-libs/libxml2
-- dev-libs/libxslt
 - sys-apps/iproute2
 - net-analyzer/netcat
 - sys-apps/less
@@ -42,7 +35,6 @@ The following packages have set up:
 - dev-vcs/git
 - dev-vcs/subversion
 - dev-vcs/mercurial
-- app-editors/vim
 - app-misc/jq
 
 
