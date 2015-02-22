@@ -26,5 +26,8 @@ fi
 
 docker import - ${REPO}:${VERSION} < ${FILE}
 docker tag ${REPO}:${VERSION} ${REPO}:latest
+
+if [ -n "${NO_PUSH}" ]; then exit; fi
+
 docker push ${REPO}:${VERSION}
 docker push ${REPO}:latest

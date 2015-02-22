@@ -12,7 +12,7 @@ docker build -t ${REPO}:${VERSION} flavored
 docker tag -f ${REPO}:${VERSION} ${REPO}:${HEAD}
 docker tag -f ${REPO}:${VERSION} ${REPO}:latest
 
-exit
+if [ -n "${NO_PUSH}" ]; then exit; fi
 
 docker push ${REPO}:${VERSION}
 docker push ${REPO}:${HEAD}

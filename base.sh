@@ -19,7 +19,7 @@ docker rm ${TMPCONTAINER}
 docker tag -f ${RAWREPO}:${VERSION} ${RAWREPO}:latest
 docker tag -f ${REPO}:${VERSION} ${REPO}:latest
 
-exit
+if [ -n "${NO_PUSH}" ]; then exit; fi
 
 docker push ${RAWREPO}:${VERSION}
 docker push ${RAWREPO}:latest
