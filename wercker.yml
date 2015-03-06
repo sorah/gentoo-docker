@@ -15,6 +15,7 @@ build:
         name: docker info
         code: |
           docker info
+          docker -v
     - script:
         name: stage3
         code: |
