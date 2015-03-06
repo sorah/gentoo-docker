@@ -11,7 +11,7 @@ VERSION="$(TZ=UTC date '+%Y%m%d%H%M%S')"
 docker build -t ${RAWREPO}:${VERSION} base
 TMPCONTAINER="$(docker run -d ${RAWREPO}:${VERSION} sleep 12h)"
 
-docker export ${TMPCONTAINER} | docker import - ${REPO}:${VERSION}
+docker export ${TMPCONTAINER} | docker import - | xargs -I IMGID docker tag IMGID ${REPO}:${VERSION}
 
 docker stop -t 1 ${TMPCONTAINER}
 if [ ! -n "$CIRCLECI" ]; then
