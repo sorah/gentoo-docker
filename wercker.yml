@@ -12,6 +12,10 @@ build:
         code: |
           docker login -u "${DOCKER_USER}" -p "${DOCKER_PASSWORD}" -e "${DOCKER_EMAIL}" https://quay.io
     - script:
+        name: docker info
+        code: |
+          docker info
+    - script:
         name: stage3
         code: |
           env SKIP_SAME=1 ./stage3.sh
