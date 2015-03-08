@@ -23,9 +23,7 @@ if [ -n "${SKIP_SAME}" ]; then
     exit
   fi
 fi
-
-# workaround for docker 1.2.0 bug #7714 (wercker is still v1.2)
-docker import - < ${FILE} | xargs -I IMGID docker tag IMGID ${REPO}:${VERSION}
+docker import - ${REPO}:${VERSION} < ${FILE}
 docker tag -f ${REPO}:${VERSION} ${REPO}:latest
 
 if [ -n "${NO_PUSH}" ]; then exit; fi
