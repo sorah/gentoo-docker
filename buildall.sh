@@ -2,8 +2,8 @@
 
 set -e
 
-echo "=> stage3"
-SKIP_SAME=1 ./stage3.sh
+# echo "=> stage3"
+# SKIP_SAME=1 ./stage3.sh
 
 echo "=> base"
 ./base.sh
