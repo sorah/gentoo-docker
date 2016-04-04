@@ -6,7 +6,6 @@ RUN CONFIG_PROTECT_MASK="/etc" dockemerge -v app-portage/flaggie app-portage/lay
   (echo 'source /var/lib/layman/make.conf' >> /etc/portage/make.conf)
 
 RUN CONFIG_PROTECT_MASK="/etc" dockemerge -v \
-  app-admin/syslog-ng \
   app-admin/sudo \
   dev-libs/openssl \
   net-analyzer/netcat \
